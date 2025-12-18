@@ -1,4 +1,4 @@
-package com.codebase.microservices.VaccinationCenter.entity;
+package com.codebase.microservices.AgentService.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,15 +10,18 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class VaccinationCenter {
+public class Agent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @Column
-    private String centerName;
+    private String name;
 
     @Column
-    private String centerAddress;
+    private String email;
+
+    @Column
+    private int vaccinationCenterId;
 }

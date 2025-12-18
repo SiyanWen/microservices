@@ -1,4 +1,4 @@
-package com.codebase.microservices.VaccinationCenter.model;
+package com.codebase.microservices.AgentService.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

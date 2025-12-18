@@ -20,3 +20,15 @@ spring:
           predicates:
             - Path=/vaccinationcenter/**
 
+        - id: AGENT-SERVICE
+          uri:
+            lb://AGENT-SERVICE
+          predicates:
+            - Path=/agent/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost

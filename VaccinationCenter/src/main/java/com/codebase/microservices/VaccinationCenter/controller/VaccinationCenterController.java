@@ -24,7 +24,7 @@ public class VaccinationCenterController {
     private RestTemplate restTemplate;
 
     @PostMapping("/add")
-    public ResponseEntity<VaccinationCenter> addCitizen(@RequestBody VaccinationCenter vaccinationCenter) {
+    public ResponseEntity<VaccinationCenter> addCenter(@RequestBody VaccinationCenter vaccinationCenter) {
 
         VaccinationCenter vaccinationCenter1 = centerRepository.save(vaccinationCenter);
         return new ResponseEntity<>(vaccinationCenter, HttpStatus.OK);
